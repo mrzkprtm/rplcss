@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        background-color: lightgreen;
+      }
+      h1 {
+        color: darkgreen;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      h2 {
+        color: darkslateblue;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        background-color: green;
+      }
+      li {
+        float: left;
+        border-right: 1px solid rgba(255, 255, 255, 0.269);
+      }
+      li a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        background-color: green;
+        color: greenyellow;
+        font-size: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      }
+      .home {
+        background-color: rgb(115, 204, 210);
+        margin: 5px;
+      }
+      li a,
+      .dropbtn {
+        display: inline-block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: lightgreen;
+        color: white;
+      }
+
+      .dropdown {
+        float: right;
+        border-right: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.269);
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 126px;
+      }
+
+      .dropdown-content a {
+        color: rgb(255, 255, 255);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: lightgreen;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1px;
+        padding: 1px;
+        margin-left: 300px;
+        margin-right: 300px;
+      }
+
+      .grid-container > div {
+        background-color: lightgreen;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        gap: 20px;
+      }
+
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .item2 {
+        align-content: flex-start;
+      }
+      .button {
+        background-color: red;
+        color: white;
+        border-radius: 15px;
+        padding: 15px;
+        font-size: 25px;
+        border: none;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        text-decoration: none;
+      }
+      div.gallery {
+        margin: 10px;
+        border: 4px dashed darkgreen;
+        float: left;
+        width: 300px;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+        font-size: 15pt;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: darkblue;
+      }
+      button {
+        margin-top: 25px;
+        width: 50%;
+        background-color: black;
+        color: #ffffff;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border: none;
+      }
+      .kategori {
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="home.html">Beranda</a></li>
+      <li><a href="product.html">Pesan Makanan</a></li>
+      <li><a href="category.html">Kategori Makanan</a></li>
+      <li><a href="order.html">Pesanan Saya</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Profil Saya</a>
+        <div class="dropdown-content">
+          <a href="profil.html">Profil</a>
+          <a href="login.html">Keluar</a>
+        </div>
+      </li>
+    </ul>
+    <div class="grid-container" align="center">
+      <div class="item1"><h1>Selamat Datang di NgalamFood</h1></div>
+      <div class="item2">
+        <h2>NgalamFood adalah website untuk memesan makanan secara online</h2>
+        <br />
+        <a class="button" href="product.html">Pesan</a>
+      </div>
+      <div class="item3"><img src="https://cdn-icons-png.flaticon.com/512/5141/5141534.png" width="80%" height="auto" /></div>
+    </div>
+    <div align="center">
+      <h1>Kategori Makanan</h1>
+    </div>
+    <div class="kategori">
+      <div class="gallery">
+        <a>
+          <img src="https://www.thespruceeats.com/thmb/8s5f39NMWBrpbvGLPr2dzMpFWG8=/2733x2733/smart/filters:no_upscale()/chinese-take-out-473784604-57d31f7f3df78c5833464853.jpg" />
+        </a>
+        <div class="desc">
+          Makanan Chinese<br /><button>Lihat</button>
+          <p>
+            Masakan Tionghoa adalah kuliner yang dihasilkan oleh orang Tionghoa, baik yang ada di Tiongkok, maupun yang ada di perantauan, termasuk di Indonesia. Istilah masakan Tionghoa di Tiongkok daratan juga mengacu kepada variasi dari
+            seluruh suku bangsa, agama dan tradisi yang berkembang di negara tersebut.
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a>
+          <img src="https://www.infobdg.com/v2/wp-content/uploads/2022/03/9AA73966-1965-4182-969F-546C80A27B40-scaled.jpeg" />
+        </a>
+        <div class="desc">
+          Makanan Khas Jawa<br /><button>Lihat</button>
+          <p>
+            Masakan Jawa adalah masakan dari masyarakat Jawa di Jawa Tengah, Yogyakarta, dan Jawa Timur. Masakan Jawa tersedia di Warung Tegal. Salah satu masakan Jawa seperti Tempe telah menjadi masakan internasional dan menjadi satu
+            satunya masakan Indonesia yang tidak terpengaruh oleh masakan Tionghoa, masakan India, atau masakan Arab.
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a>
+          <img src="https://sweetrip.id/wp-content/uploads/2020/06/miejiwo_101049629_258573461864967_2414588224721876492_n.jpg" />
+        </a>
+        <div class="desc">
+          Aneka Nasi Goreng<br /><button>Lihat</button>
+          <p>
+            Nasi goreng adalah sebuah makanan berupa nasi yang digoreng dan diaduk dalam minyak goreng, margarin, atau mentega. Biasanya ditambah kecap manis, bawang merah, bawang putih, asam jawa, lada dan bumbu-bumbu lainnya; seperti
+            telur, ayam, dan kerupuk.
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a>
+          <img
+            src="https://cdn1-production-images-kly.akamaized.net/uT3ziVSeEtRJL2sDSLaFV2eZxsE=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1464158/original/078032900_1483712341-padang_1.jpg"
+          />
+        </a>
+        <div class="desc">
+          Nasi Padang<br /><button>Lihat</button>
+          <p>
+            Nasi padang adalah nasi putih yang disajikan dengan berbagai macam lauk-pauk khas Indonesia. Kata padang merujuk pada ibu kota provinsi Sumatra Barat: Padang. Nasi padang adalah sebuah hidangan yang disajikan secara lengkap
+            secara prasmanan dengan daging, ikan, sayuran, dan makanan pedas dimakan dengan nasi putih.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
